@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>nnuTech – Complete PCB Design, Fabrication &amp; Assembly</title>
+  <meta name="description" content="End-to-end PCB engineering: schematic design, multilayer layout, fabrication support, PCBA, component sourcing, testing, and production."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ================================================================
+     HEADER
+     ================================================================ -->
+<header class="header" id="header">
+  <div class="container">
+    <div class="header-inner">
+      <a class="logo-link" data-section="home" href="#home">
+        <div class="logo-badge">⚡</div>
+        <div>
+          <span class="logo-text">nnu<span class="logo-accent">Tech</span></span>
+          <span class="logo-sub">Design · Fabrication · Assembly</span>
+        </div>
+      </a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="mainNav">
+        <ul class="nav-list">
+          <li><a data-section="home" href="#home">Home</a></li>
+          <li><a data-section="about" href="#about">About Us</a></li>
+          <li class="has-dropdown">
+            <a data-section="services" href="#services">Services</a>
+            <ul class="dropdown">
+              <li><a data-section="pcb-design" href="#pcb-design">⚙️ PCB Design</a></li>
+              <li><a data-section="pcb-fabrication" href="#pcb-fabrication">🏭 PCB Fabrication</a></li>
+              <li><a data-section="pcb-assembly" href="#pcb-assembly">🔩 PCB Assembly</a></li>
+            </ul>
+          </li>
+          <li><a data-section="industries" href="#industries">Industries</a></li>
+          <li><a data-section="quality" href="#quality">Quality &amp; Testing</a></li>
+          <li><a data-section="why-choose-us" href="#why-choose-us">Why Us</a></li>
+          <li><a data-section="request-quote" href="#request-quote" class="btn-nav">Request Quote</a></li>
+          <li><a data-section="contact" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ================================================================
+     HOME
+     ================================================================ -->
+<section id="home" class="section">
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-orb hero-orb-3"></div>
+    <div class="hero-main">
+      <div class="container">
+        <div class="hero-badge"><span class="badge-dot"></span>End-to-End PCB Solutions</div>
+        <h1 class="hero-title">
+          Complete PCB Design,<br>
+          Fabrication <span class="g-text">&amp; Assembly</span>
+        </h1>
+        <p class="hero-sub">Turning Ideas into Reliable Electronic Products</p>
+        <p class="hero-desc">From schematic design and multilayer PCB layout to prototype fabrication, component sourcing, assembly, and testing — we handle the full journey from concept to production-ready hardware.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" data-section="request-quote" href="#request-quote">Request a Quote →</a>
+          <a class="btn btn-outline" data-section="services" href="#services">Explore Services</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <span class="hs-num">500+</span>
+        <span class="hs-label">Projects Completed</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hs-num">10+</span>
+        <span class="hs-label">Years Experience</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hs-num">9+</span>
+        <span class="hs-label">Industries Served</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hs-num">100%</span>
+        <span class="hs-label">Client Satisfaction</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="section-block bg-light">
+    <div class="container">
+      <div class="section-header" data-a>
+        <span class="eyebrow">What We Do</span>
+        <h2>Comprehensive PCB Services</h2>
+        <p>From first schematic to finished hardware — every stage covered by our engineering team</p>
+        <div class="u-bar"></div>
+      </div>
+      <div class="services-grid">
+        <div class="service-card" data-a data-a-d="1" onclick="showSection('pcb-design')">
+          <div class="s-icon">🔧</div>
+          <h3>PCB Design &amp; Layout</h3>
+          <p>Schematic capture to multilayer PCB layout with DFM/DFA optimization and full documentation package.</p>
+          <span class="card-cta">Learn more →</span>
+        </div>
+        <div class="service-card" data-a data-a-d="2" onclick="showSection('pcb-fabrication')">
+          <div class="s-icon">🏭</div>
+          <h3>PCB Fabrication</h3>
+          <p>High-quality manufacturing for prototypes and production — single layer to complex multilayer boards.</p>
+          <span class="card-cta">Learn more →</span>
+        </div>
+        <div class="service-card" data-a data-a-d="3" onclick="showSection('pcb-assembly')">
+          <div class="s-icon">⚙️</div>
+          <h3>PCB Assembly (PCBA)</h3>
+          <p>SMT, through-hole, and mixed assembly with component sourcing, functional testing, and inspection.</p>
+          <span class="card-cta">Learn more →</span>
+        </div>
+        <div class="service-card" data-a data-a-d="4" onclick="showSection('services')">
+          <div class="s-icon">⚡</div>
+          <h3>Power Electronics</h3>
+          <p>Specialized design for SiC/GaN converters, motor drives, inverters, EV chargers, and high-power systems.</p>
+          <span class="card-cta">Learn more →</span>
+        </div>
+        <div class="service-card" data-a data-a-d="5">
+          <div class="s-icon">🔍</div>
+          <h3>Component Sourcing</h3>
+          <p>BOM optimization and procurement from trusted suppliers with counterfeit prevention and cost reduction.</p>
+        </div>
+        <div class="service-card" data-a data-a-d="6" onclick="showSection('quality')">
+          <div class="s-icon">✅</div>
+          <h3>Testing &amp; Validation</h3>
+          <p>Visual, AOI, electrical, and functional testing — every board verified against specification before shipment.</p>
+          <span class="card-cta">Learn more →</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Industries -->
+  <div class="section-block bg-white">
+    <div class="container">
+      <div class="section-header" data-a>
+        <span class="eyebrow">Markets</span>
+        <h2>Industries We Serve</h2>
+        <p>Specialized PCB solutions across the full spectrum of electronics sectors</p>
+        <div class="u-bar"></div>
+      </div>
+      <div class="industries-grid" data-a>
+        <div class="industry-tag">⚡ Power Electronics</div>
+        <div class="industry-tag">🏭 Industrial Automation</div>
+        <div class="industry-tag">📱 Consumer Electronics</div>
+        <div class="industry-tag">🌐 IoT Devices</div>
+        <div class="industry-tag">☀️ Renewable Energy</div>
+        <div class="industry-tag">🚗 Automotive Electronics</div>
+        <div class="industry-tag">🏥 Medical Electronics</div>
+        <div class="industry-tag">📡 Wireless Communication</div>
+        <div class="industry-tag">💻 Embedded Systems</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="section-block bg-dark">
+    <div class="container">
+      <div class="cta-block" data-a>
+        <h2>Ready to Start Your PCB Project?</h2>
+        <p>Upload your schematic, Gerber files, BOM, or project brief and receive a customized quotation from our engineering team within 24 hours.</p>
+        <a class="btn btn-white" data-section="request-quote" href="#request-quote">Request a Quote →</a>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ================================================================
+     ABOUT US
+     ================================================================ -->
+<section id="about" class="section">
+  <div class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Our Story</span>
+      <h1>About Our Company</h1>
+      <p>Engineering excellence in PCB design and electronic product development</p>
+    </div>
+  </div>
+
+  <div class="section-block bg-white">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content" data-a>
+          <h2>Who We Are</h2>
+          <p>We specialize in PCB design, fabrication support, and electronic product development for startups, research organizations, and industrial customers.</p>
+          <p>With deep experience in power electronics, embedded systems, control electronics, and communication systems, we deliver practical engineering solutions focused on performance, manufacturability, and long-term reliability.</p>
+          <p>Our goal is to reduce product development time while maintaining high-quality standards and cost efficiency — giving our clients a genuine competitive advantage.</p>
+        </div>
+        <div class="about-stats" data-a data-a-d="2">
+          <div class="stat-card">
+            <span class="stat-num" data-count="500" data-suffix="+">500+</span>
+            <span class="stat-label">Projects Completed</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-count="10" data-suffix="+">10+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-count="9" data-suffix="+">9+</span>
+            <span class="stat-label">Industries Served</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-count="100" data-suffix="%">100%</span>
+            <span class="stat-label">Client Satisfaction</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-block bg-light">
+    <div class="container">
+      <div class="section-header" data-a>
+        <span class="eyebrow">Direction</span>
+        <h2>Mission &amp; Vision</h2>
+        <div class="u-bar"></div>
+      </div>
+      <div class="mv-grid">
+        <div class="mv-card" data-a data-a-d="1">
+          <div class="mv-icon">🎯</div>
+          <h3>Our Mission</h3>
+          <p>To provide reliable, innovative, and cost-effective PCB engineering solutions from concept to production — reducing time-to-market for every client we serve.</p>
+        </div>
+        <div class="mv-card" data-a data-a-d="2">
+          <div class="mv-icon">🌍</div>
+          <h3>Our Vision</h3>
+          <p>To become a globally trusted partner in PCB design and electronics manufacturing — recognized for technical depth, quality standards, and engineering integrity.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     SERVICES OVERVIEW
+     ================================================================ -->
+<section id="services" class="section">
+  <div class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Capabilities</span>
+      <h1>Our Services</h1>
+      <p>Complete end-to-end PCB engineering — design through production</p>
+    </div>
+  </div>
+
+  <div class="section-block bg-white">
+    <div class="container">
+      <div class="svc-grid">
+        <div class="svc-card" data-a data-a-d="1" onclick="showSection('pcb-design')">
+          <div class="svc-icon">🔧</div>
+          <h3>PCB Design &amp; Layout</h3>
+          <ul>
+            <li>Schematic Capture</li>
+            <li>Multilayer PCB Layout</li>
+            <li>High-Speed &amp; High-Current Design</li>
+            <li>Power Electronics PCB</li>
+            <li>EMC/EMI Optimization</li>
+            <li>DFM &amp; DFA Review</li>
+          </ul>
+          <span class="svc-link">View details →</span>
+        </div>
+        <div class="svc-card" data-a data-a-d="2" onclick="showSection('pcb-fabrication')">
+          <div class="svc-icon">🏭</div>
+          <h3>PCB Fabrication</h3>
+          <ul>
+            <li>Single to Multilayer PCB</li>
+            <li>Rigid, Flexible &amp; Metal Core</li>
+            <li>FR4, Rogers, Aluminum</li>
+            <li>Various Surface Finishes</li>
+            <li>Controlled Impedance</li>
+            <li>Prototype to Production</li>
+          </ul>
+          <span class="svc-link">View details →</span>
+        </div>
+        <div class="svc-card" data-a data-a-d="3" onclick="showSection('pcb-assembly')">
+          <div class="svc-icon">⚙️</div>
+          <h3>PCB Assembly (PCBA)</h3>
+          <ul>
+            <li>SMT Assembly</li>
+            <li>Through-Hole Assembly</li>
+            <li>Mixed Technology</li>
+            <li>Component Procurement</li>
+            <li>Functional Testing</li>
+            <li>Box Build Assembly</li>
+          </ul>
+          <span class="svc-link">View details →</span>
+        </div>
+        <div class="svc-card" data-a data-a-d="4">
+          <div class="svc-icon">🔍</div>
+          <h3>Component Sourcing</h3>
+          <ul>
+            <li>BOM Analysis &amp; Optimization</li>
+            <li>Alternate Part Selection</li>
+            <li>Trusted Supplier Network</li>
+            <li>Component Verification</li>
+            <li>Counterfeit Prevention</li>
+            <li>Supply Chain Risk Reduction</li>
+          </ul>
+        </div>
+        <div class="svc-card" data-a data-a-d="5" onclick="showSection('quality')">
+          <div class="svc-icon">✅</div>
+          <h3>Testing &amp; Quality</h3>
+          <ul>
+            <li>Visual Inspection</li>
+            <li>AOI Inspection</li>
+            <li>Functional Testing</li>
+            <li>Electrical Testing</li>
+            <li>Design Verification</li>
+            <li>Final Quality Report</li>
+          </ul>
+          <span class="svc-link">View details →</span>
+        </div>
+        <div class="svc-card" data-a data-a-d="6">
+          <div class="svc-icon">📐</div>
+          <h3>DFM / DFA Review</h3>
+          <ul>
+            <li>Design for Manufacturability</li>
+            <li>Design for Assembly</li>
+            <li>Early-Stage Issue Detection</li>
+            <li>Cost Optimization</li>
+            <li>Yield Improvement</li>
+            <li>Detailed Review Report</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Power Electronics Specialization -->
+      <div class="power-box" data-a>
+        <h2>⚡ Power Electronics Specialization</h2>
+        <p class="power-sub">Our strongest domain — optimized PCBs for high-power and high-frequency applications</p>
+        <div class="power-tags">
+          <span class="power-tag">SiC MOSFET Applications</span>
+          <span class="power-tag">GaN Based Converters</span>
+          <span class="power-tag">Motor Drives</span>
+          <span class="power-tag">Inverters</span>
+          <span class="power-tag">SMPS</span>
+          <span class="power-tag">EV Chargers</span>
+          <span class="power-tag">DC-DC Converters</span>
+          <span class="power-tag">Battery Management Systems</span>
+          <span class="power-tag">High Current PCB Design</span>
+          <span class="power-tag">Thermal Management</span>
+          <span class="power-tag">EMI / EMC Optimization</span>
+        </div>
+        <p class="power-desc">We focus on minimizing parasitic inductance, improving switching performance, thermal reliability, and EMI reduction in high-power applications. Every layout decision is driven by power-system engineering principles.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     PCB DESIGN
+     ================================================================ -->
+<section id="pcb-design" class="section">
+  <div class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Service</span>
+      <h1>PCB Design Services</h1>
+      <p>Professional PCB design for simple to complex electronic systems</p>
+    </div>
+  </div>
+
+  <div class="section-block bg-white">
+    <div class="container">
+      <div class="two-col">
+        <div data-a>
+          <h2>Design Capabilities</h2>
+          <p class="section-intro">From schematic capture to production-ready Gerber files, our engineers deliver optimized, manufacturable designs every time.</p>
+          <ul class="cap-list">
+            <li><span class="tick">✓</span> Schematic Capture</li>
+            <li><span class="tick">✓</span> PCB Layout Design</li>
+            <li><span class="tick">✓</span> 2 Layer PCB Design</li>
+            <li><span class="tick">✓</span> 4 Layer PCB Design</li>
+            <li><span class="tick">✓</span> Multilayer PCB Design</li>
+            <li><span class="tick">✓</span> High-Speed PCB Design</li>
+            <li><span class="tick">✓</span> High Current PCB Design</li>
+            <li><span class="tick">✓</span> Power Electronics PCB Design</li>
+            <li><span class="tick">✓</span> Embedded System PCB Design</li>
+            <li><span class="tick">✓</span> EMC / EMI Consideration</li>
+            <li><span class="tick">✓</span> Thermal Analysis</li>
+            <li><span class="tick">✓</span> Signal Integrity Optimization</li>
+            <li><span class="tick">✓</span> Design Review</li>
+            <li><span class="tick">✓</span> DFM &amp; DFA</li>
+          </ul>
+        </div>
+        <div data-a data-a-d="2">
+          <h2>Deliverables</h2>
+          <p class="section-intro">A complete manufacturing-ready documentation package included with every design:</p>
+          <div class="del-grid">
+            <div class="del-item"><span class="del-icon">📄</span><span>Schematic Files</span></div>
+            <div class="del-item"><span class="del-icon">🔲</span><span>PCB Layout Files</span></div>
+            <div class="del-item"><span class="del-icon">📐</span><span>Gerber Files</span></div>
+            <div class="del-item"><span class="del-icon">📋</span><span>Bill of Materials</span></div>
+            <div class="del-item"><span class="del-icon">📍</span><span>Pick &amp; Place Files</span></div>
+            <div class="del-item"><span class="del-icon">📊</span><span>Assembly Drawings</span></div>
+            <div class="del-item"><span class="del-icon">🧊</span><span>3D Models</span></div>
+            <div class="del-item"><span class="del-icon">🏭</span><span>Manufacturing Files</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-block bg-dark">
+    <div class="container">
+      <div class="cta-block" data-a>
+        <h2>Ready to Start Your PCB Design?</h2>
+        <p>Share your requirements and receive a custom design proposal from our engineering team within 24 hours.</p>
+        <a class="btn btn-white" data-section="request-quote" href="#request-quote">Get a Quote →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     PCB FABRICATION
+     ================================================================ -->
+<section id="pcb-fabrication" class="section">
+  <div class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Service</span>
+      <h1>PCB Fabrication Services</h1>
+      <p>High-quality PCB manufacturing for prototypes and production volumes</p>
+    </div>
+  </div>
+
+  <div class="section-block bg-white">
+    <div class="container">
+      <div class="three-col">
+        <div class="info-card" data-a data-a-d="1">
+          <div class="ic-head">
+            <div class="ic-head-icon">🗂️</div>
+            <h3>PCB Types</h3>
+          </div>
+          <ul class="cap-list">
+            <li><span class="tick">✓</span> Single Layer PCB</li>
+            <li><span class="tick">✓</span> Double Layer PCB</li>
+            <li><span class="tick">✓</span> Multilayer PCB</li>
+            <li><span class="tick">✓</span> Flexible PCB</li>
+            <li><span class="tick">✓</span> Rigid PCB</li>
+            <li><span class="tick">✓</span> Metal Core PCB</li>
+            <li><span class="tick">✓</span> High Frequency PCB</li>
+            <li><span class="tick">✓</span> Heavy Copper PCB</li>
+          </ul>
+        </div>
+        <div class="info-card" data-a data-a-d="2">
+          <div class="ic-head">
+            <div class="ic-head-icon">🧪</div>
+            <h3>Materials &amp; Finishes</h3>
+          </div>
+          <p class="info-sub">Substrate Materials</p>
+          <ul class="cap-list">
+            <li><span class="tick">✓</span> FR4 Material</li>
+            <li><span class="tick">✓</span> Aluminum PCB</li>
+            <li><span class="tick">✓</span> Rogers Material</li>
+            <li><span class="tick">✓</span> Copper Thickness Options</li>
+          </ul>
+          <p class="info-sub">Surface Finishes</p>
+          <ul class="cap-list">
+            <li><span class="tick">✓</span> HASL</li>
+            <li><span class="tick">✓</span> Lead Free HASL</li>
+            <li><span class="tick">✓</span> ENIG</li>
+            <li><span class="tick">✓</span> OSP</li>
+          </ul>
+        </div>
+        <div class="info-card" data-a data-a-d="3">
+          <div class="ic-head">
+            <div class="ic-head-icon">⚗️</div>
+            <h3>Advanced Features</h3>
+          </div>
+          <ul class="cap-list">
+            <li><span class="tick">✓</span> Controlled Impedance</li>
+            <li><span class="tick">✓</span> Blind / Buried Vias</li>
+            <li><span class="tick">✓</span> Via Filling</li>
+            <li><span class="tick">✓</span> Gold Plating</li>
+            <li><span class="tick">✓</span> High Voltage Clearance Design</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-block bg-dark">
+    <div class="container">
+      <div class="cta-block" data-a>
+        <h2>Ready to Fabricate Your PCB?</h2>
+        <p>Share your Gerber files and specifications for a fast fabrication quote from our team.</p>
+        <a class="btn btn-white" data-section="request-quote" href="#request-quote">Get a Quote →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     PCB ASSEMBLY
+     ================================================================ -->
+<section id="pcb-assembly" class="section">
+  <div class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Service</span>
+      <h1>PCB Assembly (PCBA) Services</h1>
+      <p>Complete assembly solutions from prototype to production</p>
+    </div>
+  </div>
+
+  <div class="section-block bg-white">
+    <div class="container">
+      <div class="three-col">
+        <div class="info-card" data-a data-a-d="1">
+          <div class="ic-head">
+            <div class="ic-head-icon">🔩</div>
+            <h3>Assembly Capabilities</h3>
+          </div>
+          <ul class="cap-list">
+            <li><span class="tick">✓</span> SMT Assembly</li>
+            <li><span class="tick">✓</span> Through-Hole Assembly</li>
+            <li><span class="tick">✓</span> Mixed Technology Assembly</li>
+            <li><span class="tick">✓</span> Prototype Assembly</li>
+            <li><span class="tick">✓</span> Low Volume Production</li>
+            <li><span class="tick">✓</span> Mass Production</li>
+          </ul>
+        </div>
+        <div class="info-card" data-a data-a-d="2">
+          <div class="ic-head">
+            <div class="ic-head-icon">🛠️</div>
+            <h3>Additional Services</h3>
+          </div>
+          <ul class="cap-list">
+            <li><span class="tick">✓</span> Component Procurement</li>
+            <li><span class="tick">✓</span> BOM Optimization</li>
+            <li><span class="tick">✓</span> Functional Testing</li>
+            <li><span class="tick">✓</span> Firmware Programming</li>
+            <li><span class="tick">✓</span> Box Build Assembly</li>
+            <li><span class="tick">✓</span> Final Inspection</li>
+          </ul>
+        </div>
+        <div class="info-card" data-a data-a-d="3">
+          <div class="ic-head">
+            <div class="ic-head-icon">🔬</div>
+            <h3>Inspection &amp; Quality</h3>
+          </div>
+          <ul class="cap-list">
+            <li><span class="tick">✓</span> Visual Inspection</li>
+            <li><span class="tick">✓</span> AOI Inspection</li>
+            <li><span class="tick">✓</span> Functional Testing</li>
+            <li><span class="tick">✓</span> Electrical Testing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-block bg-dark">
+    <div class="container">
+      <div class="cta-block" data-a>
+        <h2>Ready to Assemble Your PCB?</h2>
+        <p>Share your BOM, assembly drawings, and requirements for a detailed assembly quote.</p>
+        <a class="btn btn-white" data-section="request-quote" href="#request-quote">Get a Quote →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     INDUSTRIES
+     ================================================================ -->
+<section id="industries" class="section">
+  <div class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Markets</span>
+      <h1>Industries We Serve</h1>
+      <p>Specialized PCB solutions across diverse technology sectors</p>
+    </div>
+  </div>
+
+  <div class="section-block bg-light">
+    <div class="container">
+      <div class="ind-grid">
+        <div class="industry-card" data-a data-a-d="1">
+          <div class="ind-icon">⚡</div>
+          <h3>Power Electronics</h3>
+          <p>High-current PCBs for converters, inverters, motor drives, and power supplies. Specialized in SiC and GaN applications with robust thermal management and low-inductance layouts.</p>
+        </div>
+        <div class="industry-card" data-a data-a-d="2">
+          <div class="ind-icon">🏭</div>
+          <h3>Industrial Automation</h3>
+          <p>Rugged PCBs for PLCs, HMIs, sensor interfaces, motion control systems, and industrial communication modules designed for demanding environments.</p>
+        </div>
+        <div class="industry-card" data-a data-a-d="3">
+          <div class="ind-icon">📱</div>
+          <h3>Consumer Electronics</h3>
+          <p>Compact, high-density PCBs for consumer devices with attention to form factor, cost efficiency, and scalability from prototype to mass production.</p>
+        </div>
+        <div class="industry-card" data-a data-a-d="4">
+          <div class="ind-icon">🌐</div>
+          <h3>IoT Devices</h3>
+          <p>Low-power wireless PCB designs for smart sensors, edge devices, and connected systems integrating Bluetooth, Wi-Fi, LoRa, and Zigbee.</p>
+        </div>
+        <div class="industry-card" data-a data-a-d="5">
+          <div class="ind-icon">☀️</div>
+          <h3>Renewable Energy</h3>
+          <p>PCBs for solar inverters, wind turbine controllers, MPPT systems, and energy storage management with wide temperature range reliability.</p>
+        </div>
+        <div class="industry-card" data-a data-a-d="6">
+          <div class="ind-icon">🚗</div>
+          <h3>Automotive Electronics</h3>
+          <p>High-reliability PCBs for EV systems, battery management, on-board chargers, and vehicle control units meeting automotive-grade standards.</p>
+        </div>
+        <div class="industry-card" data-a data-a-d="1">
+          <div class="ind-icon">🏥</div>
+          <h3>Medical Electronics</h3>
+          <p>Precision PCBs for monitoring equipment, diagnostic devices, and life-critical systems requiring strict quality control and full traceability.</p>
+        </div>
+        <div class="industry-card" data-a data-a-d="2">
+          <div class="ind-icon">📡</div>
+          <h3>Wireless Communication</h3>
+          <p>High-frequency RF PCBs for antenna systems, transceivers, gateways, and wireless modules with signal integrity and impedance-controlled design.</p>
+        </div>
+        <div class="industry-card" data-a data-a-d="3">
+          <div class="ind-icon">💻</div>
+          <h3>Embedded Systems</h3>
+          <p>Custom controller boards, development platforms, and embedded modules for microcontroller and FPGA-based applications across research and industry.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     QUALITY & TESTING
+     ================================================================ -->
+<section id="quality" class="section">
+  <div class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Standards</span>
+      <h1>Quality &amp; Testing</h1>
+      <p>Rigorous multi-stage quality control on every PCB we deliver</p>
+    </div>
+  </div>
+
+  <div class="section-block bg-white">
+    <div class="container">
+      <div class="section-header" data-a>
+        <span class="eyebrow">Process</span>
+        <h2>Our 6-Stage Quality Process</h2>
+        <p>From design review to final delivery — every stage verified before shipping</p>
+        <div class="u-bar"></div>
+      </div>
+      <div class="q-steps">
+        <div class="q-step" data-a>
+          <div class="qs-num">01</div>
+          <div class="qs-body">
+            <h3>Design Review (DFM / DFA)</h3>
+            <p>Manufacturability and assembly checks before production begins — identifying and resolving potential issues early to prevent costly rework later.</p>
+          </div>
+        </div>
+        <div class="q-step" data-a>
+          <div class="qs-num">02</div>
+          <div class="qs-body">
+            <h3>Visual Inspection</h3>
+            <p>Manual visual inspection of solder joints, component placements, and board condition against IPC workmanship standards.</p>
+          </div>
+        </div>
+        <div class="q-step" data-a>
+          <div class="qs-num">03</div>
+          <div class="qs-body">
+            <h3>AOI Inspection</h3>
+            <p>Automated Optical Inspection detects solder defects, missing components, polarity errors, and placement deviations with high accuracy and full board coverage.</p>
+          </div>
+        </div>
+        <div class="q-step" data-a>
+          <div class="qs-num">04</div>
+          <div class="qs-body">
+            <h3>Electrical Testing</h3>
+            <p>Continuity and isolation testing verifies correct connections and the absence of shorts or open circuits across the entire board net-list.</p>
+          </div>
+        </div>
+        <div class="q-step" data-a>
+          <div class="qs-num">05</div>
+          <div class="qs-body">
+            <h3>Functional Testing</h3>
+            <p>Full functional validation under real operating conditions confirms every board performs to specification before shipment.</p>
+          </div>
+        </div>
+        <div class="q-step" data-a>
+          <div class="qs-num">06</div>
+          <div class="qs-body">
+            <h3>Final Inspection &amp; Delivery</h3>
+            <p>Complete final review with quality documentation, careful packaging, and delivery — every board signed off before it leaves our hands.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-block bg-light">
+    <div class="container">
+      <div class="three-col">
+        <div class="info-card" data-a data-a-d="1">
+          <div class="ic-head"><div class="ic-head-icon">👁️</div><h3>Inspection Methods</h3></div>
+          <ul class="cap-list">
+            <li><span class="tick">✓</span> Visual Inspection</li>
+            <li><span class="tick">✓</span> AOI Inspection</li>
+            <li><span class="tick">✓</span> X-Ray Inspection (BGA)</li>
+            <li><span class="tick">✓</span> Microscope Inspection</li>
+          </ul>
+        </div>
+        <div class="info-card" data-a data-a-d="2">
+          <div class="ic-head"><div class="ic-head-icon">⚡</div><h3>Testing Methods</h3></div>
+          <ul class="cap-list">
+            <li><span class="tick">✓</span> Functional Testing</li>
+            <li><span class="tick">✓</span> Electrical Testing</li>
+            <li><span class="tick">✓</span> In-Circuit Testing (ICT)</li>
+            <li><span class="tick">✓</span> Firmware Verification</li>
+          </ul>
+        </div>
+        <div class="info-card" data-a data-a-d="3">
+          <div class="ic-head"><div class="ic-head-icon">📜</div><h3>Quality Standards</h3></div>
+          <ul class="cap-list">
+            <li><span class="tick">✓</span> IPC-A-610 Workmanship</li>
+            <li><span class="tick">✓</span> IPC-2221 Design Standard</li>
+            <li><span class="tick">✓</span> DFM Best Practices</li>
+            <li><span class="tick">✓</span> Full Traceability</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     WHY CHOOSE US
+     ================================================================ -->
+<section id="why-choose-us" class="section">
+  <div class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Advantage</span>
+      <h1>Why Choose Us</h1>
+      <p>Your trusted engineering partner from concept to production</p>
+    </div>
+  </div>
+
+  <div class="section-block bg-light">
+    <div class="container">
+      <div class="section-header" data-a>
+        <span class="eyebrow">Differentiators</span>
+        <h2>What Sets Us Apart</h2>
+        <p>Eight reasons engineers and product teams choose us for their PCB projects</p>
+        <div class="u-bar"></div>
+      </div>
+      <div class="why-grid">
+        <div class="why-card" data-a data-a-d="1">
+          <div class="why-icon">🔬</div>
+          <h3>Engineering-Driven</h3>
+          <p>Deep technical expertise applied to every project — optimized designs, not generic templates.</p>
+        </div>
+        <div class="why-card" data-a data-a-d="2">
+          <div class="why-icon">⚡</div>
+          <h3>Power Electronics Expert</h3>
+          <p>Specialized in SiC, GaN, motor drives, and thermal management — a capability few PCB providers match.</p>
+        </div>
+        <div class="why-card" data-a data-a-d="3">
+          <div class="why-icon">⏱️</div>
+          <h3>Fast Turnaround</h3>
+          <p>Efficient project management and streamlined engineering processes deliver results quickly.</p>
+        </div>
+        <div class="why-card" data-a data-a-d="4">
+          <div class="why-icon">🔄</div>
+          <h3>Prototype to Production</h3>
+          <p>Full support through every stage — first prototype to scalable mass production.</p>
+        </div>
+        <div class="why-card" data-a data-a-d="5">
+          <div class="why-icon">💰</div>
+          <h3>Cost-Effective</h3>
+          <p>Design optimization and smart manufacturing choices deliver high quality at competitive pricing.</p>
+        </div>
+        <div class="why-card" data-a data-a-d="6">
+          <div class="why-icon">🔧</div>
+          <h3>Component Sourcing</h3>
+          <p>Trusted supplier networks for reliable procurement, BOM optimization, and supply chain risk management.</p>
+        </div>
+        <div class="why-card" data-a data-a-d="7">
+          <div class="why-icon">✅</div>
+          <h3>Rigorous Quality</h3>
+          <p>Multi-stage inspection ensures every board ships defect-free and verified against specification.</p>
+        </div>
+        <div class="why-card" data-a data-a-d="8">
+          <div class="why-icon">💬</div>
+          <h3>Technical Consultation</h3>
+          <p>Direct engineering support throughout — design reviews, troubleshooting, and optimization advice.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-block bg-dark">
+    <div class="container">
+      <div class="cta-block" data-a>
+        <h2>Let's Build Something Together</h2>
+        <p>Share your project and our team will deliver a solution that works — on time and to specification.</p>
+        <a class="btn btn-white" data-section="request-quote" href="#request-quote">Request a Quote →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     REQUEST QUOTE
+     ================================================================ -->
+<section id="request-quote" class="section">
+  <div class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Get Started</span>
+      <h1>Request a Quote</h1>
+      <p>Share your project details — we'll respond within 24 hours</p>
+    </div>
+  </div>
+
+  <div class="section-block bg-light">
+    <div class="container">
+      <div class="quote-layout">
+        <div data-a>
+          <h2 class="form-heading">Project Details</h2>
+          <form id="quoteForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Full Name *</label>
+                <input type="text" placeholder="Your name" required/>
+              </div>
+              <div class="form-group">
+                <label>Email Address *</label>
+                <input type="email" placeholder="you@example.com" required/>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" placeholder="+1 234 567 8900"/>
+              </div>
+              <div class="form-group">
+                <label>Company / Organization</label>
+                <input type="text" placeholder="Company name"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Service Required *</label>
+              <select required>
+                <option value="">Select a service…</option>
+                <option>PCB Design</option>
+                <option>PCB Fabrication</option>
+                <option>PCB Assembly (PCBA)</option>
+                <option>Complete Solution (Design + Fab + Assembly)</option>
+                <option>Power Electronics PCB</option>
+                <option>Component Sourcing</option>
+                <option>DFM / DFA Review</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>PCB Layers</label>
+                <select>
+                  <option value="">Select layers…</option>
+                  <option>1 Layer</option>
+                  <option>2 Layers</option>
+                  <option>4 Layers</option>
+                  <option>6+ Layers</option>
+                  <option>Not Sure</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Quantity Required</label>
+                <input type="text" placeholder="e.g., 5 prototypes / 500 pcs"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Project Description *</label>
+              <textarea rows="4" placeholder="Describe your project, application, and key requirements…" required></textarea>
+            </div>
+            <div class="form-group">
+              <label>Upload Files</label>
+              <div class="file-zone" id="fileUploadArea">
+                <div class="file-zone-icon">📎</div>
+                <p>Drag &amp; drop files here or <span class="file-browse">browse</span></p>
+                <p class="file-types">Gerber, Schematic, BOM, Assembly drawings (ZIP, PDF, SCH, CSV…)</p>
+                <input type="file" id="fileInput" multiple accept=".zip,.pdf,.sch,.brd,.gbr,.csv,.xlsx,.dxf,.step,.stp,.png,.jpg" style="display:none"/>
+              </div>
+              <div id="fileList" class="file-list"></div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Submit Quote Request →</button>
+          </form>
+        </div>
+
+        <div class="q-sidebar" data-a data-a-d="3">
+          <div class="sidebar-card">
+            <h3>📋 What to Include</h3>
+            <ul class="sidebar-list">
+              <li>📄 Schematic Files</li>
+              <li>📐 Gerber Files</li>
+              <li>📋 Bill of Materials (BOM)</li>
+              <li>📊 Assembly Drawings</li>
+              <li>📏 Quantity Requirements</li>
+              <li>📝 Project Description</li>
+            </ul>
+          </div>
+          <div class="sidebar-card">
+            <h3>⚡ Quick Response</h3>
+            <p>Our engineering team reviews all quote requests within <strong>24 hours</strong> on business days.</p>
+          </div>
+          <div class="sidebar-card">
+            <h3>💬 Have Questions?</h3>
+            <p>Reach out directly before submitting a full quote request.</p>
+            <a class="btn btn-outline-dark btn-sm" data-section="contact" href="#contact">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     CONTACT US
+     ================================================================ -->
+<section id="contact" class="section">
+  <div class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Get In Touch</span>
+      <h1>Contact Us</h1>
+      <p>Talk to our engineering team about your project</p>
+    </div>
+  </div>
+
+  <div class="section-block bg-light">
+    <div class="container">
+      <div class="contact-layout">
+        <div data-a>
+          <h2 class="form-heading">Send a Message</h2>
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Full Name *</label>
+                <input type="text" placeholder="Your name" required/>
+              </div>
+              <div class="form-group">
+                <label>Email Address *</label>
+                <input type="email" placeholder="you@example.com" required/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Subject</label>
+              <input type="text" placeholder="How can we help?"/>
+            </div>
+            <div class="form-group">
+              <label>Message *</label>
+              <textarea rows="6" placeholder="Your message…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message →</button>
+          </form>
+        </div>
+
+        <div data-a data-a-d="2">
+          <div class="contact-card">
+            <h3>Contact Information</h3>
+            <div class="c-item">
+              <div class="c-icon">📧</div>
+              <div>
+                <strong>Email</strong>
+                <p>neha87sood@gmail.com</p>
+              </div>
+            </div>
+            <div class="c-item">
+              <div class="c-icon">📞</div>
+              <div>
+                <strong>Phone</strong>
+                <p>+91 8591648483</p>
+              </div>
+            </div>
+            <div class="c-item">
+              <div class="c-icon">📍</div>
+              <div>
+                <strong>Address</strong>
+                <p> #1, Vikas Nagar, Near Divine Apartment, Baltana<br/>Zirakpur, PB, 140604</p>
+              </div>
+            </div>
+            <div class="c-item">
+              <div class="c-icon">🕐</div>
+              <div>
+                <strong>Business Hours</strong>
+                <p>Mon – Fri: 9:00 AM – 6:00 PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================================================================
+     FOOTER
+     ================================================================ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="f-brand-logo">
+          <div class="f-badge">⚡</div>
+          <span class="f-name">nnu<span>Tech</span></span>
+        </div>
+        <p>Complete PCB design, fabrication, and assembly solutions — engineering your ideas from concept to production-ready hardware.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a data-section="pcb-design" href="#pcb-design">PCB Design</a></li>
+          <li><a data-section="pcb-fabrication" href="#pcb-fabrication">PCB Fabrication</a></li>
+          <li><a data-section="pcb-assembly" href="#pcb-assembly">PCB Assembly</a></li>
+          <li><a data-section="services" href="#services">All Services</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a data-section="about" href="#about">About Us</a></li>
+          <li><a data-section="industries" href="#industries">Industries</a></li>
+          <li><a data-section="quality" href="#quality">Quality &amp; Testing</a></li>
+          <li><a data-section="why-choose-us" href="#why-choose-us">Why Choose Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get Started</h4>
+        <ul>
+          <li><a data-section="request-quote" href="#request-quote">Request a Quote</a></li>
+          <li><a data-section="contact" href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 nnuTech. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Success Modal -->
+<div id="successModal" class="modal" style="display:none">
+  <div class="modal-box">
+    <div class="modal-icon">✅</div>
+    <h3>Thank You!</h3>
+    <p>Your request has been submitted. Our team will get back to you within 24 hours.</p>
+    <button class="btn btn-primary" onclick="closeModal()">Close</button>
+  </div>
+</div>
+
+<!-- Scroll to top -->
+<button class="scroll-top" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
